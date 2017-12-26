@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: grid;
+  min-height: 100vh;
+  min-width: 100%;
+  grid-template-columns: 0.2fr 1.4fr 0.8fr 0.2fr;
+  grid-template-rows: 0.2fr 1fr 0.1fr;
+  grid-template-areas: ". . . ." ". left right ." ". . . .";
+  background: url("../assets/images/SchoenenAchtergrond.png") no-repeat center center fixed;
+  background-size: cover; }
+
+.left-container {
+  grid-area: left;
+  z-index: 0; }
+
+.title {
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 6vw;
+  line-height: 8vw;
+  font-family: 'Bungee', cursive; }
+
+.counter-container {
+  margin-left: 50px;
+  grid-area: left;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 0.5fr 0.7fr;
+  grid-template-rows: 0.5fr;
+  grid-template-areas: ". counter";
+  z-index: 1; }
+
+.counter {
+  margin-top: 19vh;
+  min-width: 200px;
+  grid-area: counter;
+  display: grid;
+  grid-template-columns: 0.1fr 0.8fr 0.1fr;
+  grid-template-rows: 0.4fr 0.7fr 0.4fr;
+  grid-template-areas: ". . ." ". numbers ." ". total-km .";
+  border-radius: 15px;
+  border: 5px solid #ff7800; }
+
+.counter-numbers {
+  justify-self: center;
+  grid-area: numbers;
+  display: grid;
+  min-width: 180px;
+  width: 100%;
+  grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+  grid-column-gap: 5%; }
+
+.counter-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  grid-area: total-km;
+  color: #000000;
+  font-size: 2vw;
+  font-family: 'Bungee', cursive; }
+
+.counter-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-areas: "totaal km"; }
+
+.totaal {
+  grid-area: totaal;
+  text-align: left; }
+
+.km {
+  grid-area: km;
+  text-align: right; }
+
+.counter-km-block {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 4px solid #000000;
+  font-family: 'Bungee', cursive;
+  font-size: 3vw;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.right-container {
+  grid-area: right;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-left: 40%; }
+
+.right-container img {
+  margin: 15px;
+  min-width: 100px;
+  width: 60%; }
+
+@media (max-width: 600px) {
+  .counter-km-block {
+    font-size: 1rem; }
+  .counter-text {
+    font-size: 1rem; }
+  .title {
+    font-size: 10vw; }
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0px 0.6fr 0.3fr;
+    grid-template-areas: "." "left" "right"; }
+  .counter-container {
+    margin-left: 25px;
+    grid-area: left;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 0.5fr 0.7fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas: ". counter";
+    z-index: 1; }
+  .right-container {
+    grid-area: right;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-left: 0;
+    text-align: center; }
+  .right-container img {
+    margin: 15px;
+    min-width: 100px;
+    width: 30%; } }

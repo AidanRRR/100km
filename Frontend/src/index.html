@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto" rel="stylesheet">
+
+    <title>100KM Loop</title>
+</head>
+
+<body>
+
+    <div class="left-container">
+        <div class="title">
+            DE 100KM
+            <br /> tvv
+            <br />Kom op
+            <br/> tegen kanker
+        </div>
+    </div>
+    <div id="app" class="counter-container">
+        <div class="counter">
+            <div class="counter-numbers">
+                <div class="counter-km-block">{{ this.kms[0] }}</div>
+                <div class="counter-km-block">{{ this.kms[1] }}</div>
+                <div class="counter-km-block">{{ this.kms[2] }}</div>
+                <div class="counter-km-block">{{ this.kms[3] }}</div>
+            </div>
+            <div class="counter-text">
+                <div class="counter-grid">
+                    <div class="totaal">Totaal</div>
+                    <div class="km">KM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-container">
+        <img src="./assets/images/2commit.png">
+        <img src="./assets/images/inspirex_logo.png">
+        <img src="./assets/images/cronos-groep-logo.png">
+        <img src="./assets/images/ctbg.svg">
+        <img src="./assets/images/kanker.png">
+    </div>
+
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+
+    <script src="js/100km.js"></script>
+</body>
+
+</html>
