@@ -1,0 +1,56 @@
+html, body {
+  height: 100%; }
+
+body {
+  background: url("../assets/images/Skullptkraft_bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.border {
+  border: 12px solid #120300;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  z-index: -10; }
+
+.logo {
+  width: 450px;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  position: absolute;
+  z-index: 0; }
+
+.nav-links {
+  top: 15vh;
+  left: 55vw;
+  position: fixed;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300; }
+
+.nav-links a {
+  margin: 20px; }
+
+.navbar {
+  position: absolute;
+  text-align: right; }
+
+.slogan-container {
+  margin-left: 10vw;
+  position: absolute;
+  z-index: 0; }
+
+.slogan-power {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 6rem; }
+
+.footer-text {
+  color: white; }

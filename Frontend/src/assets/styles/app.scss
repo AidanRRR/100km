@@ -1,107 +1,33 @@
-// Orange #ff7800
-// #ffffff
-// #00f1c8
-// #0000000
-// #96dadd
+// // Orange #ff7800
+// // #ffffff
+// // #00f1c8
+// // #0000000
+// // #96dadd
 body {
-  margin: 0;
+  display: grid;
+  min-height: 100vh;
+  min-width: 100%;
+  grid-template-columns: 0.3fr 1.1fr 0.8fr 0.3fr;
+  grid-template-rows: 150px 1fr 0.2fr;
+  grid-template-areas:
+    ". . . ."
+    ". left right ."
+    ". . . .";
+  background: url("../images/SchoenenAchtergrond.png") no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   overflow: hidden;
 }
 
-.pagina-wrapper {
-  height: 100vh;
-  background-image: url('../images/SchoenenStrokesAchtergrond.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -10;
-}
-
-.title-counter-container {
-  margin-left: 15%;
-  padding-top: 20%;
-}
-
 .title {
+  grid-area: left;
+}
+
+.title-title {
   color: white;
-  font-size: 5vw;
+  font-size: 2.5rem;
   font-family: 'Bungee', cursive;
 }
-
-.company-stat {
-  margin-left: 10%;
-}
-
-.company-block {
-  margin: 25px 0px 25px 100px;
-  width: 350px;
-  height: 50px;
-}
-
-.company-block-bg {
-  position: absolute;
-  margin-top: 20px;
-  margin-left: 25px;
-  width: 320px;
-  height: 30px;
-  background-color: white;
-  z-index: 9;
-}
-
-.company-block-progress {
-  position: absolute;
-  margin-top: 20px;
-  margin-left: 25px;
-  height: 15px;
-  background-color: red;
-  z-index: 9;
-}
-
-.company-img {
-  position: absolute;
-  width: 100px;
-  z-index: 10;
-}
-
-.company-name {
-  margin-left: 80px;
-  margin-bottom: 25px;
-  color: black;
-  font-size: 0.8vw;
-  font-family: 'Roboto', cursive;
-  font-weight: bold;
-}
-
-.company-km-counter {
-  color: black;
-  font-size: 2vw;
-  font-family: 'Bungee', cursive;
-}
-
-.company-km-counter-km {
-  color: black;
-  font-size: 1vw;
-  font-family: 'Roboto', cursive;
-}
-
-.counter-km-border {
-  width: 600px;
-  height: 350px;
-  border-radius: 15px;
-  border: 5px solid #ff7800;
-}
-
-.counter-km-backdrop {
-  width: 84px;
-  height: 148px;
-  background-color: black;
-  border-radius: 10px;
-  border: 4px solid black;
-}
-
-.counter-km-backdrop-text {
-  font-family: 'Bungee', cursive;
-  font-size: 6vw;
-  color: white;
-}
-
-.counter-km {}
